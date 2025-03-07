@@ -1,0 +1,28 @@
+.main-nav {
+  margin: 0;
+  padding: 0;
+
+  &__toggle {
+    background-color: $base-white;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+  }
+
+  // состояние кнопки при закрытом меню(показываем решотку)
+  &--closed .main-nav__toggle {
+    background-image: url("../../icons/stack.svg#buger");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center;
+  }
+
+  // состояние кнопки при открытом меню(показываем крестик)
+  &--opened .main-nav__toggle {
+    background-image: url("../../icons/stack.svg#cross");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: center;
+  }
+}
