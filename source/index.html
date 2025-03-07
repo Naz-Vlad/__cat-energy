@@ -15,7 +15,11 @@
     <div class="header__logo logo">
       <!-- иконка логотипа -->
       <a class="logo__link logo__link--image" tabindex="0" href="#">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип иконки кота">
+        <picture>
+          <source media="(min-width: 1440px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-desktop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+          <img class="logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Иконка кота.">
+        </picture>
       </a>
       <!-- текст логотипа -->
       <a class="logo__link logo__link--text" href="#">
@@ -25,6 +29,9 @@
     <nav class="main-nav">
       <!-- кнопка открытия меню навигации -->
       <button class="main-nav__toggle" type="button">
+        <svg class="logo__link-icon" width="16" height="16">
+          <use href="icons/stack.svg#buger"></use>
+        </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <!-- меню навигации -->
