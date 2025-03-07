@@ -1,9 +1,27 @@
 .site-list {
   position: absolute;
   left: 0;
+  right: auto;
   top: 65;
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-width: 320px;
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+
+  &__item {
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+    font-family: $second-font;
+    font-size: 20px;
+    line-height: 20px;
+    color: $base-black;
+    padding: 22px 0 23px;
+    text-transform: uppercase;
+  }
 }
