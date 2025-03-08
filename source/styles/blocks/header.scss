@@ -1,15 +1,13 @@
 .header {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   background-color: $base-white;
-  padding: 13px 20px;
 
   &__logo {
-
     display: flex;
     align-items: center;
     gap: 56px;
+    padding: 13px 20px 10px;
   }
 }
