@@ -14,18 +14,26 @@
   }
 
   // состояние кнопки при закрытом меню(показываем решотку)
-  &--closed .main-nav__toggle {
-    background-image: url("../../icons/stack.svg#buger");
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
-    background-position: center;
+  &--closed .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 1px;
+    right: 4px;
+    mask-image: url("../../icons/stack.svg#buger");
+    background-color: $base-black;
   }
 
   // состояние кнопки при открытом меню(показываем крестик)
-  &--opened .main-nav__toggle {
-    background-image: url("../../icons/stack.svg#cross");
-    background-repeat: no-repeat;
-    background-size: 18px 16px;
-    background-position: center;
+  &--opened .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    right: 3px;
+    mask-image: url("../../icons/stack.svg#cross");
+    background-color: $base-black;
   }
 }
