@@ -9,5 +9,18 @@
     align-items: center;
     gap: 56px;
     padding: 13px 20px 10px;
+
+    @media (min-width: $tablet) {
+      gap: 13px;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 17px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

@@ -21,6 +21,11 @@
     &:active {
       background-color: $base-secondary;
     }
+
+    //отключаем кнопку переключения меню
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 
   // состояние кнопки при закрытом меню(показываем решотку)

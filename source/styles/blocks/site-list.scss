@@ -2,8 +2,21 @@
   min-width: 320px;
   border-bottom: 1px solid #e6e6e6;
 
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: none;
+    width: 520px;
+    box-sizing: border-box;
+  }
+
   &__item {
     border-top: 1px solid #e6e6e6;
+
+    @media (min-width: $tablet) {
+      border-top: none;
+      padding: 0 17px;
+    }
   }
 
   &__link {
@@ -15,5 +28,18 @@
     color: $base-black;
     padding: 22px 0 23px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet) {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 20px 0;
+    }
+  }
+}
+
+.site-list .site-list__link--active {
+  @media (min-width: $tablet) {
+    padding-bottom: 7px;
+    border-bottom: 2px solid $base-green;
   }
 }
