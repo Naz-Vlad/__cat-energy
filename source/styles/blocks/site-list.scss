@@ -4,9 +4,10 @@
 
   @media (min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     border-bottom: none;
-    width: 520px;
+    max-width: 520px;
     box-sizing: border-box;
   }
 
