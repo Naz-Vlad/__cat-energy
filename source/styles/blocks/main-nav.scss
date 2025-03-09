@@ -12,6 +12,11 @@
     height: 24px;
     border: none;
     cursor: pointer;
+    box-sizing: border-box;
+
+    &:active {
+      background-color: $base-secondary;
+    }
   }
 
   // состояние кнопки при закрытом меню(показываем решотку)
@@ -26,10 +31,9 @@
 
   // состояние кнопки при открытом меню(показываем крестик)
   &--opened .main-nav__toggle {
-    mask-image: url("../../icons/stack.svg#cross");
+    background-image: url("../../icons/stack.svg#cross");
     background-repeat: no-repeat;
     background-size: 18px 18px;
     background-position: center;
-    background-color: $base-black;
   }
 }
