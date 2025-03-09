@@ -3,6 +3,7 @@
   padding: 0;
 
   &__toggle {
+    display: block;
     position: absolute;
     top: 19;
     right: 17;
@@ -14,26 +15,21 @@
   }
 
   // состояние кнопки при закрытом меню(показываем решотку)
-  &--closed .main-nav__toggle::after {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 1px;
-    right: 4px;
-    mask-image: url("../../icons/stack.svg#buger");
-    background-color: $base-black;
+  &--closed .main-nav__toggle {
+    background-image: url("../../icons/stack.svg#buger");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center;
+    margin-right: 4px;
+    margin-top: 1px;
   }
 
   // состояние кнопки при открытом меню(показываем крестик)
-  &--opened .main-nav__toggle::before {
-    content: "";
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    top: 3px;
-    right: 3px;
+  &--opened .main-nav__toggle {
     mask-image: url("../../icons/stack.svg#cross");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: center;
     background-color: $base-black;
   }
 }
