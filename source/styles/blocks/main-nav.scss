@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
 
+  // если класс .main-nav--closed меню закрыто
+  &--closed .site-list {
+    @media (max-width: $mobile-only) {
+      display: none;
+    }
+  }
+
   &__toggle {
     display: block;
     position: absolute;
@@ -36,4 +43,13 @@
     background-size: 18px 18px;
     background-position: center;
   }
+}
+
+// при нерабочем JS отключаем изображение кнопки
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+// при нерабочем JS открываем(показываем) меню
+.main-nav--nojs .site-list {
+  display: block;
 }
