@@ -1,12 +1,8 @@
 .site-list {
-  left: 0;
-  right: auto;
-  top: 65;
   min-width: 320px;
   border-bottom: 1px solid #e6e6e6;
 
   &__item {
-    width: 100%;
     border-top: 1px solid #e6e6e6;
   }
 

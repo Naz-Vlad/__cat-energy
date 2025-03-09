@@ -1,7 +1,4 @@
 .main-nav {
-  margin: 0;
-  padding: 0;
-
   // если класс .main-nav--closed меню закрыто
   &--closed .site-list {
     @media (max-width: $mobile-only) {
