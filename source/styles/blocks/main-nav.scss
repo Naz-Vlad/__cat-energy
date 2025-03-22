@@ -54,4 +54,5 @@
 // при нерабочем JS открываем(показываем) меню
 .main-nav--nojs .site-list {
   display: block;
+  position: static;
 }
