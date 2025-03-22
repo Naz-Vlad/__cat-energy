@@ -42,13 +42,13 @@
   }
 }
 
-.site-list .site-list__link--active {
+.site-list__link--active {
   @media (min-width: $tablet) {
     padding-bottom: 7px;
     border-bottom: 2px solid $base-green;
   }
 }
 
-.site-list .site-list__link:hover {
+.site-list__link:hover {
   opacity: 50%;
 }

@@ -7,3 +7,24 @@
     src: $font-src;
   }
 }
+
+@mixin heading-1 {
+  margin: 0;
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+@mixin button {
+  display: block;
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $base-white;
+  background-color: $base-green;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
