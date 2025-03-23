@@ -12,6 +12,14 @@
   margin: 0;
   font-family: $second-font;
   font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+@mixin heading-2 {
+  margin: 0;
+  font-family: $second-font;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 }

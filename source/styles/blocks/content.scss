@@ -2,10 +2,20 @@
   text-align: center;
   color: $base-white;
 
+  @media (min-width: $tablet) {
+    color: $base-black;
+  }
+
   &__title {
-    @include heading-1;
+    @include heading-2;
     max-width: 252px;
     margin-bottom: 26px;
+
+    @media (min-width: $tablet) {
+      @include heading-1;
+      max-width: 420px;
+      margin-top: 30px;
+    }
   }
 
   &__text {

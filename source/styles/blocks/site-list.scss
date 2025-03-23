@@ -1,6 +1,6 @@
 .site-list {
   position: absolute;
-  min-width: 320px;
+  min-width: 100%;
   border-bottom: 1px solid #e6e6e6;
   background-color: $base-white;
   z-index: 1;
@@ -12,6 +12,7 @@
     border-bottom: none;
     max-width: 520px;
     box-sizing: border-box;
+    position: static;
   }
 
   &__item {
