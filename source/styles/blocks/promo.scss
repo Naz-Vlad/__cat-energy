@@ -7,10 +7,17 @@
 
   @media (min-width: $tablet) {
     align-items: normal;
+  }
 
-    &__img {
+  &__img {
+    @media (min-width: $tablet) {
       margin-left: 30px;
       margin-top: -10px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: -63px;
+      margin-top: -5px;
     }
   }
 
@@ -40,15 +47,16 @@
 
   @media (min-width: $desktop) {
     position: static;
+    flex-direction: row;
 
     &::after {
       content: "";
       position: absolute;
-      top: 4px;
+      top: 0;
       left: 720px;
       right: 0;
       z-index: -1;
-      height: 694px;
+      height: 693px;
       background-image: url("../../images/desktop-cat@1x.jpg");
       background-position: top center;
       background-repeat: no-repeat;
@@ -71,6 +79,13 @@
       line-height: 26px;
       box-sizing: border-box;
       padding: 14px;
+    }
+
+    @media (min-width: $desktop) {
+      position: absolute;
+      left: 70px;
+      bottom: 136px;
+      max-width: 244px;
     }
   }
 }
