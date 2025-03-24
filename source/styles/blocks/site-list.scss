@@ -42,7 +42,12 @@
 
     @media (min-width: $desktop) {
       font-size: 20px;
+      color: $base-white;
     }
+  }
+
+  @media (min-width: $desktop) {
+    background-color: transparent;
   }
 }
 
@@ -51,8 +56,13 @@
     padding-bottom: 7px;
     border-bottom: 2px solid $base-green;
   }
+
+  @media (min-width: $desktop) {
+    border-bottom: 2px solid $base-white;
+  }
 }
 
 .site-list__link:hover {
   opacity: 50%;
 }
+
