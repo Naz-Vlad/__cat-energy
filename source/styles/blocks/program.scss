@@ -25,6 +25,26 @@
       top: 24;
       left: 20;
     }
+
+    &--cat-slim::after {
+      position: absolute;
+      content: "";
+      width: 36px;
+      height: 50px;
+      background-image: url("../../icons/stack.svg#cat-slim");
+      top: 22;
+      left: 27;
+    }
+
+    &--cat-pro::after {
+      position: absolute;
+      content: "";
+      width: 67px;
+      height: 28px;
+      background-image: url("../../icons/stack.svg#cat-pro");
+      top: 37;
+      left: 13;
+    }
   }
 
   &__title {
@@ -49,10 +69,30 @@
   }
 
   &__link {
+    position: relative;
     font-family: $second-font;
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
     color: $base-black;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 10px;
+      background-image: url("../../icons/stack.svg#arrow");
+      top: 7px;
+      left: 101px;
+      transform-origin: left;
+    }
+  }
+
+  &__link:hover::before {
+    transform: scaleX(1.35);
+  }
+
+  &__link:active::before {
+    opacity: 0.3;
   }
 }
