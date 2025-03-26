@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    row-gap: 20px;
+    row-gap: 19px;
   }
 
   &__item {
@@ -22,8 +22,8 @@
       height: 50px;
       background-color: $base-green;
       border-radius: 50%;
-      top: 24;
-      left: 20;
+      top: 24px;
+      left: 20px;
     }
 
     &--cat-slim::after {
@@ -32,8 +32,8 @@
       width: 36px;
       height: 50px;
       background-image: url("../../icons/stack.svg#cat-slim");
-      top: 22;
-      left: 27;
+      top: 21px;
+      left: 27px;
     }
 
     &--cat-pro::after {
@@ -42,8 +42,8 @@
       width: 67px;
       height: 28px;
       background-image: url("../../icons/stack.svg#cat-pro");
-      top: 37;
-      left: 13;
+      top: 35px;
+      left: 13px;
     }
   }
 
@@ -54,18 +54,20 @@
     font-size: 24px;
     line-height: 37px;
     text-transform: uppercase;
-    margin: 10px auto 29px 90px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 29px;
   }
 
   &__text {
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
   }
 
   &__border {
     min-width: 240px;
     border-top: 1px solid #d9d9d9;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 
   &__link {
