@@ -1,5 +1,4 @@
 .content {
-  //position: relative;
   text-align: center;
   color: $base-white;
   min-width: 280px;
@@ -41,7 +40,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-top: 75px;
+    padding-top: 78px;
     padding-left: 190px;
   }
 
@@ -70,6 +69,10 @@
       font-size: 20px;
       line-height: 26px;
       padding: 14px 0;
+    }
+
+    @media (min-width: $desktop) {
+      max-width: 244px;
     }
   }
 }
