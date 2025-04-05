@@ -1,0 +1,47 @@
+.statistic {
+  display: flex;
+  flex-direction: column;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    min-width: 124px;
+    min-height: 56px;
+    border: 1px solid $base-border;
+    border-radius: 3px;
+  }
+
+  &__number {
+    font-family: $second-font;
+    font-size: 23px;
+    line-height: 24px;
+    display: block;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    display: block;
+    position: absolute;
+    font-size: 12px;
+    line-height: 100%;
+    background-color: $base-background;
+    top: 45px;
+    max-width: 80px;
+    left: 20;
+    right: 20;
+  }
+
+  &__summary {
+    text-align: center;
+  }
+}
