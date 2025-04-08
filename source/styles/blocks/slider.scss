@@ -1,18 +1,28 @@
 .slider {
   position: relative;
 
+  @media (min-width: $tablet) {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
   &__left-shift {
     position: absolute;
     width: 50%;
     height: 98.5%;
     overflow: hidden;
+  }
 
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: left;
-      background-color: $base-background;
+  &__left-shift img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    background-color: $base-background;
+
+
+    @media (min-width: $tablet) {
+      background-image: linear-gradient(to top, $base-background 359px, $base-white 359px);
     }
   }
 

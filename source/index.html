@@ -161,10 +161,16 @@
          ) -->
         <div class="example__slider slider">
           <div class="slider__left-shift">
-            <img src="./images/slider/cat-fat-mobile@1x.png" width="280" height="256" alt="Кот до похудения">
+            <picture>
+              <source media="(min-width: 768px)" width="560" height="512" srcset="images/slider/cat-fat-tablet@1x.png 1x, images/slider/cat-fat-tablet@2x.png 2x" type="image/png">
+              <img src="images/slider/cat-fat-mobile@1x.png" srcset="images/slider/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Кот до похудения">
+            </picture>
           </div>
           <div class="slider__right-shift">
-            <img src="./images/slider/cat-thin-mobile@1x.png" width="280" height="256" alt="Кот после похудения">
+            <picture>
+              <source media="(min-width: 768px)" width="560" height="512" srcset="images/slider/cat-thin-tablet@1x.png 1x, images/slider/cat-thin-tablet@2x.png 2x" type="image/png">
+              <img src="./images/slider/cat-thin-mobile@1x.png" srcset="./images/slider/cat-thin-mobile@2x.png 2x" width="280" height="256" alt="Кот после похудения">
+            </picture>
           </div>
           <button class="slider__button" type="button">
             <svg class="slider__icon" width="24" height="18">
