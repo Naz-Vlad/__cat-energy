@@ -6,6 +6,10 @@
     margin: 0 auto;
   }
 
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+
   &__left-shift {
     position: absolute;
     width: 50%;
@@ -23,6 +27,10 @@
 
     @media (min-width: $tablet) {
       background-image: linear-gradient(to top, $base-background 359px, $base-white 359px);
+    }
+
+    @media (min-width: $desktop) {
+      background-image: linear-gradient(to top, $base-background 405px, $base-white 405px);
     }
   }
 
